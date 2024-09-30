@@ -7,6 +7,7 @@ import { logout } from "@/app/authSlice";
 import Login from "@/components/Login";
 
 export default function Home() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const user = useSelector((state: { auth: { user: any } }) => state.auth.user);
   const dispatch = useDispatch();
 
